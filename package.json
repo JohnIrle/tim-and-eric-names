@@ -1,0 +1,24 @@
+{
+  "name": "tim-and-eric-names",
+  "version": "1.0.0",
+  "description": "Get random Tim and Eric Names",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnIrle/tim-and-eric-names.git"
+  },
+  "keywords": [
+    "random",
+    "tim",
+    "eric"
+  ],
+  "author": "John Irle <irlejohn@gmail.com> (http://johnirle.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnIrle/tim-and-eric-names/issues"
+  },
+  "homepage": "https://github.com/JohnIrle/tim-and-eric-names#readme"
+}
