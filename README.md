@@ -1,1 +1,1 @@
-# starwars-names
+# tim-and-eric-names
