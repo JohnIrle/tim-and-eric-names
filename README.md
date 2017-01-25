@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/l/tim-and-eric-names.svg)]()
 [![npm](https://img.shields.io/npm/dt/tim-and-eric-names.svg)]()
 ---
-tim-and-eric-names is a small application that will return either and array of all of the names in names.json, a random name, or an array with a specified number of random names. 
+tim-and-eric-names is a small application that will return either and array of all of the names in names.json, a random name, or an array with a specified number of random names.
 
 ## Install
 ```
@@ -14,8 +14,8 @@ npm install tim-and-eric-names
 ```
 ### Browser support
 ```
-<script src="https://unpkg.com/tim-and-eric-names@1.1.0/dist/index.umd.js"></script>
-<script src="https://unpkg.com/tim-and-eric-names@1.1.0/dist/index.umd.min.js"></script>
+<script src="https://unpkg.com/tim-and-eric-names@1.1.2/dist/index.umd.js"></script>
+<script src="https://unpkg.com/tim-and-eric-names@1.1.2/dist/index.umd.min.js"></script>
 ```
 ---
 ### Use
