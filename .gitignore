@@ -4,3 +4,5 @@ node_modules
 *~
 *.swo
 coverage
+dist
+.nyc_output
