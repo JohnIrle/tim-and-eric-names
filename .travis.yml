@@ -14,6 +14,7 @@ script:
   - npm run test:single
 after_success:
   - npm run semantic-release
+  - npm run check-coverage
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
