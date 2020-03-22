@@ -40,7 +40,6 @@
     "unique-random-array": "2.0.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.9.0",
     "babel-cli": "6.26.0",
     "babel-loader": "8.1.0",
     "babel-preset-es2015": "6.24.1",
@@ -75,7 +74,8 @@
   },
   "babel": {
     "presets": [
-      "preset-env"
+      "es2015",
+      "stage-2"
     ]
   }
 }
