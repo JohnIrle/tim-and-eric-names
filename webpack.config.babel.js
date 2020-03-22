@@ -1,19 +1,21 @@
-import {join} from 'path'
-
-const include = join(__dirname, 'src')
-
-export default {
-  entry: './src/index',
-  output: {
-    path: join(__dirname, 'dist'),
-    libraryTarget: 'umd',
-    library: 'timAndEricNames',
-  },
-  devtool: 'source-map',
-  module: {
-    loaders: [
-      {test: /\.js$/, loader: 'babel', include},
-      {test: /\.json$/, 'loader': 'json', include},
-    ]
-  }
+module: {
+  rules: [
+    {
+      test: /\.js$/,
+      exclude: /(node_modules)/,
+      use: {
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env"]
+        }
+      }
+    },
+    {
+      test: /\.json$/,
+      exclude: /(node_modules)/,
+      use: {
+        loader: "json-loader"
+      }
+    }
+  ];
 }

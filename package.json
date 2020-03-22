@@ -56,7 +56,8 @@
     "nyc": "15.0.0",
     "rimraf": "3.0.2",
     "semantic-release": "17.0.4",
-    "webpack": "4.42.0"
+    "webpack": "4.42.0",
+    "webpack-cli": "3.3.11"
   },
   "Config": {
     "commitizen": {
