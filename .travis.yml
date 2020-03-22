@@ -8,9 +8,9 @@ branches:
 notifications:
   email: false
 node_js:
-  - '7'
-  - '6'
-  - '4'
+  - '12'
+  - '11'
+  - '10'
 before_script:
   - npm prune
 script:
