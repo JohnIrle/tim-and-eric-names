@@ -1,21 +1,20 @@
 import uniqueRandomArray from 'unique-random-array';
 import timEricNames from './names.json';
 
-var getRandomItem = uniqueRandomArray(timEricNames);
+const getRandomItem = uniqueRandomArray(timEricNames);
+
+function random(number) {
+  if (number === undefined) {
+    return getRandomItem();
+  }
+  let randomItems = [];
+  for (let i = 0; i < number; i++) {
+    randomItems.push(getRandomItem());
+  }
+  return randomItems;
+}
 
 module.exports = {
   all: timEricNames,
   random: random
 };
-
-function random(number) {
-  if (number === undefined) {
-    return getRandomItem();
-  } else {
-    var randomItems = [];
-    for (var i = 0; i < number; i++) {
-      randomItems.push(getRandomItem());
-    }
-    return randomItems;
-  }
-}
