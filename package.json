@@ -4,8 +4,6 @@
   "description": "Get random Tim and Eric Names",
   "main": "dist/index.js",
   "scripts": {
-    "commit": "git-cz",
-    "report-coverage": "cat ./coverage/lcov.info | codecov ",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "watch:test": "npm t -- -w",
     "test": "mocha src/index.test.js --require @babel/register",
