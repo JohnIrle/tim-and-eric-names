@@ -13,8 +13,8 @@
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
-    "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "build:umd": "webpack --output-filename index.umd.js --mode=development",
+    "build:umd.min": "webpack --output-filename index.umd.min.js --mode=production",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -56,8 +56,8 @@
     "nyc": "15.0.0",
     "rimraf": "3.0.2",
     "semantic-release": "^17.0.4",
-    "webpack": "4.42.0",
-    "webpack-cli": "3.3.11"
+    "webpack": "5.73.0",
+    "webpack-cli": "4.10.0"
   },
   "Config": {
     "commitizen": {
