@@ -1,6 +1,4 @@
 # tim-and-eric-names
-[![Travis](https://img.shields.io/travis/JohnIrle/tim-and-eric-names.svg)](https://travis-ci.org/JohnIrle/tim-and-eric-names)
-[![codecov](https://codecov.io/gh/JohnIrle/tim-and-eric-names/branch/master/graph/badge.svg)](https://codecov.io/gh/JohnIrle/tim-and-eric-names)
 [![npm](https://img.shields.io/npm/v/tim-and-eric-names.svg)](https://www.npmjs.com/package/tim-and-eric-names)
 [![npm](https://img.shields.io/npm/l/tim-and-eric-names.svg)]()
 [![npm](https://img.shields.io/npm/dt/tim-and-eric-names.svg)]()
@@ -10,8 +8,8 @@ tim-and-eric-names is a small library that will return either an array of all of
 ## Install
 ```node
 npm install tim-and-eric-names
-
 ```
+
 ### Browser support
 ```HTML
 <script src="https://unpkg.com/tim-and-eric-names@1.1.2/dist/index.umd.js"></script>
