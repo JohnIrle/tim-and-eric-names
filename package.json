@@ -1,6 +1,6 @@
 {
   "name": "tim-and-eric-names",
-  "version": "0.0.0-development",
+  "version": "1.2.0",
   "description": "Get random Tim and Eric Names",
   "main": "dist/index.js",
   "scripts": {
