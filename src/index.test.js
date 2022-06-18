@@ -1,34 +1,38 @@
-import {expect} from 'chai';
 import timEric from './index.js';
 
-describe('tim-eric-names', function() {
-  describe('all', function(){
-    it('should be an array of strings', function(){
-      expect(timEric.all).to.satisfy(isArrayOfStrings);
+describe('tim-eric-names', () => {
+  describe('all', () => {
+    it('should be an array of strings', () => {
+      const all = timEric.all;
 
-      function isArrayOfStrings(array) {
-        return array.every(function(item){
-          return typeof item === 'string';
-        });
-      }
+      expect(isArrayOfStrings(all)).toBe(true);
+
     });
     it('should contain "Dilly"', function(){
-      expect(timEric.all).to.include('Dilly');
+      expect(timEric.all).toContain('Dilly');
     });
   });
 
-  describe('random', function(){
-    it('should return a random item from the timEric.all', function(){
-      var randomItem = timEric.random();
-      expect(timEric.all).to.include(randomItem);
+  describe('random', () => {
+    it('should return a random item from the timEric.all', () => {
+      const randomItem = timEric.random();
+
+      expect(timEric.all).toContain(randomItem);
     });
 
-    it('should return an array of random items if passed a number', function() {
-      var randomItems = timEric.random(3);
-      expect(randomItems).to.have.length(3);
-      randomItems.forEach(function(item) {
-        expect(timEric.all).to.include(item);
+    it('should return an array of random items if passed a number', () => {
+      const randomItems = timEric.random(3);
+
+      expect(randomItems).toHaveLength(3);
+      randomItems.forEach((item) => {
+        expect(timEric.all).toContain(item);
       });
     });
   });
 });
+
+const isArrayOfStrings = (array) => {
+  return array.every((item) => {
+    return typeof item === 'string';
+  });
+}
